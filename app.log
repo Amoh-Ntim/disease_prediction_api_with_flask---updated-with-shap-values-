@@ -1,0 +1,91 @@
+2024-08-29 16:54:07,824 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 182, in predict_liver_disease
+    shap_values = explainer(df)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 75, in __call__
+    return super().__call__(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_explainer.py", line 266, in __call__
+    row_result = self.explain_row(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 88, in explain_row
+    fm = MaskedModel(self.model, self.masker, self.link, self.linearize_link, *row_args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\utils\_masked_model.py", line 31, in __init__
+    self._variants = ~self.masker.invariants(*args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\maskers\_tabular.py", line 150, in invariants
+    return np.isclose(x, self.data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\numpy\core\numeric.py", line 2348, in isclose
+    xfin = isfinite(x)
+TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2024-08-29 22:19:56,411 ERROR: Exception on /api/predict_diabetes [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 16, in diabetes_prediction
+    result = predict_diabetes(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 33, in predict_diabetes
+    shap_values = get_shap_values(diabetes_model, df, diabetes_train_data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 215, in get_shap_values
+    shap_values = explainer(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 75, in __call__
+    return super().__call__(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_explainer.py", line 266, in __call__
+    row_result = self.explain_row(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 88, in explain_row
+    fm = MaskedModel(self.model, self.masker, self.link, self.linearize_link, *row_args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\utils\_masked_model.py", line 31, in __init__
+    self._variants = ~self.masker.invariants(*args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\maskers\_tabular.py", line 150, in invariants
+    return np.isclose(x, self.data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\numpy\core\numeric.py", line 2348, in isclose
+    xfin = isfinite(x)
+TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2024-08-29 22:20:03,996 ERROR: Exception on /api/predict_diabetes [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 16, in diabetes_prediction
+    result = predict_diabetes(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 33, in predict_diabetes
+    shap_values = get_shap_values(diabetes_model, df, diabetes_train_data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 215, in get_shap_values
+    shap_values = explainer(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 75, in __call__
+    return super().__call__(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_explainer.py", line 266, in __call__
+    row_result = self.explain_row(
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\explainers\_exact.py", line 88, in explain_row
+    fm = MaskedModel(self.model, self.masker, self.link, self.linearize_link, *row_args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\utils\_masked_model.py", line 31, in __init__
+    self._variants = ~self.masker.invariants(*args)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\shap\maskers\_tabular.py", line 150, in invariants
+    return np.isclose(x, self.data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\numpy\core\numeric.py", line 2348, in isclose
+    xfin = isfinite(x)
+TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
