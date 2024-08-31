@@ -158,7 +158,7 @@ def predict_liver_disease(data):
     shap_values_mapped = dict(zip(feature_names, shap_values.values[0]))
     
     predicted_class = int(prediction['prediction_label'][0])
-    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+    predicted_prob = round(float(prediction['prediction_score'][0]), 4)
 
     predicted_class_str = "Liver Disease" if predicted_class == 1 else "No Liver Disease"
     

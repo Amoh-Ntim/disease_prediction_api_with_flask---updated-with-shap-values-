@@ -89,3 +89,377 @@ Traceback (most recent call last):
   File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\numpy\core\numeric.py", line 2348, in isclose
     xfin = isfinite(x)
 TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2024-08-30 20:01:08,635 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:01:08,663 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:01:08,692 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:01:58,108 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:24,019 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:26,888 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:30,073 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:33,212 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:35,904 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:06:39,620 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:12:08,736 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:12:47,119 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:12:50,524 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-30 20:13:40,235 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 12:34:14,460 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 12:35:51,555 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 12:37:27,804 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 13:28:01,362 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 13:30:17,101 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 13:30:17,656 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 13:31:00,278 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
+2024-08-31 13:31:01,213 ERROR: Exception on /api/predict_liver_disease [POST]
+Traceback (most recent call last):
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\routes.py", line 95, in liver_disease_prediction
+    result = predict_liver_disease(data)
+  File "C:\Users\Amoh Ntim\Desktop\rasamedbot\disease_prediction_api_with_flask -(updated with shap values) - Copy\app\predict.py", line 161, in predict_liver_disease
+    predicted_prob = round(float(predicted_class['prediction_score'][0]), 4)
+TypeError: 'int' object is not subscriptable
